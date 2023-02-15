@@ -342,6 +342,8 @@
     .buy-btn button {
         padding: 12px 70px;
     }
+
+
 }
 
 @media screen and (min-width:1200px) {
@@ -377,5 +379,12 @@
 
     .buy-btn button {
         padding: 12px 70px;
+    }
+}
+
+@media screen and (min-width:993px) {
+    .footer-container {
+        position: absolute;
+        bottom: 0px;
     }
 }

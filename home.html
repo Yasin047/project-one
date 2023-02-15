@@ -5,15 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script
-      src="https://kit.fontawesome.com/620a4a15df.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="webfonts/all.min.css" />
+    <link rel="stylesheet" href="webfonts/fontawesome.min.css" />
+    <link rel="stylesheet" href="./humber.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="main-container">
       <div class="main-inner-container">
+        <!-- TopNav--Start -->
+
+        <section class="top-nav">
+          <div class="logo">
+            <span style="color: #fff" ;>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </span>
+            <h2 style="color: #fff" ;>Shopcart</h2>
+          </div>
+          <input id="menu-toggle" type="checkbox" />
+          <label class="menu-button-container" for="menu-toggle">
+            <div class="menu-button"></div>
+          </label>
+          <ul class="menu">
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">Delivery</a></li>
+            <li>
+              <a href="#">Account</a>
+            </li>
+            <li>
+              <a href="#">Cart</a>
+            </li>
+          </ul>
+        </section>
+
         <!-- Topbar--Start -->
 
         <div class="topbar-container">
@@ -43,7 +68,7 @@
 
         <div class="header-container">
           <div class="header-inner-container">
-            <div class="logo">
+            <div class="logo common">
               <span>
                 <i class="fa-solid fa-cart-shopping"></i>
               </span>
@@ -52,7 +77,7 @@
 
             <div class="menu">
               <ul>
-                <li class="dropdown">
+                <li class="dropdown common">
                   <div>
                     <span>Categories</span>
                     <span> <i class="fa-solid fa-caret-down"></i> </span>
@@ -63,12 +88,12 @@
                     <a href="#">Link 3</a>
                   </div>
                 </li>
-                <li><a href="#">Deals</a></li>
-                <li><a href="#">What's New</a></li>
-                <li><a href="#">Delivery</a></li>
+                <li class="common"><a href="#">Deals</a></li>
+                <li class="common"><a href="#">What's New</a></li>
+                <li class="common"><a href="#">Delivery</a></li>
               </ul>
             </div>
-            <div class="extra-container">
+            <div class="extra-container common">
               <form class="search-bar">
                 <div class="search">
                   <input type="text" placeholder="Search Product" />
@@ -77,17 +102,59 @@
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
               </form>
-              <div class="account">
+              <div class="account common">
                 <span><i class="fa-solid fa-user"></i></span>
                 <span>Account</span>
               </div>
-              <div class="cart">
+              <div class="cart common">
                 <span><i class="fa-solid fa-cart-plus"></i></span>
                 <span>Cart</span>
               </div>
             </div>
           </div>
         </div>
+        <!-- Extra-Search-Bar--Start -->
+
+        <form class="extra-search-bar">
+          <button class="dropdown-extra">
+            <div class="menu-extra">
+              <ul>
+                <li>
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                    "
+                  >
+                    <span>Categories</span>
+                    <span>
+                      <i class="fa-solid fa-caret-down"></i>
+                    </span>
+                  </div>
+                  <div class="dropdown-content-extra">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </button>
+          <div class="search">
+            <input type="text" placeholder="Search Product" />
+          </div>
+          <button
+            style="
+              height: 35px;
+              border: none;
+              padding: 0 20px;
+              background: #66b3f6;
+            "
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
 
         <!-- Hero-area-Start -->
 
@@ -102,7 +169,7 @@
 
             <div class="hero-area-img">
               <img
-                src="https://lovepik.com/images/png-and-listen-to-music-with-headphones.html"
+                src="./asset/Lovepik_com-401101205-senior-man-with-headphones.png"
                 alt=""
               />
             </div>
@@ -141,11 +208,11 @@
               <span>All Filter</span>
               <span> <i class="fa-solid fa-sliders"></i></span>
             </li>
+            <li>
+              <span>Sort By</span>
+              <span> <i class="fa-solid fa-caret-down"></i> </span>
+            </li>
           </ul>
-          <div class="sort">
-            <span>Sort by</span>
-            <span> <i class="fa-solid fa-caret-down"></i> </span>
-          </div>
         </div>
 
         <!-- Product--Start -->
@@ -167,11 +234,13 @@
               <div class="product-text">
                 <div class="product-name">
                   <h3>Wireless Earbuds, IPX8</h3>
-                  <h3>$89</h3>
                 </div>
                 <h6 class="product-description">
                   Organic Cotton, fairtrade certified
                 </h6>
+                <div class="product-price">
+                  <h3>$89</h3>
+                </div>
                 <div>
                   <span
                     ><i class="fa-solid fa-star"></i
@@ -199,11 +268,13 @@
               <div class="product-text">
                 <div class="product-name">
                   <h3>Wireless Earbuds, IPX8</h3>
-                  <h3>$89</h3>
                 </div>
                 <h6 class="product-description">
                   Organic Cotton, fairtrade certified
                 </h6>
+                <div class="product-price">
+                  <h3>$89</h3>
+                </div>
                 <div>
                   <span
                     ><i class="fa-solid fa-star"></i
@@ -231,11 +302,13 @@
               <div class="product-text">
                 <div class="product-name">
                   <h3>Wireless Earbuds, IPX8</h3>
-                  <h3>$89</h3>
                 </div>
                 <h6 class="product-description">
                   Organic Cotton, fairtrade certified
                 </h6>
+                <div class="product-price">
+                  <h3>$89</h3>
+                </div>
                 <div>
                   <span
                     ><i class="fa-solid fa-star"></i
@@ -263,11 +336,13 @@
               <div class="product-text">
                 <div class="product-name">
                   <h3>Wireless Earbuds, IPX8</h3>
-                  <h3>$89</h3>
                 </div>
                 <h6 class="product-description">
                   Organic Cotton, fairtrade certified
                 </h6>
+                <div class="product-price">
+                  <h3>$89</h3>
+                </div>
                 <div>
                   <span
                     ><i class="fa-solid fa-star"></i
@@ -295,46 +370,13 @@
               <div class="product-text">
                 <div class="product-name">
                   <h3>Wireless Earbuds, IPX8</h3>
-                  <h3>$89</h3>
                 </div>
                 <h6 class="product-description">
                   Organic Cotton, fairtrade certified
                 </h6>
-                <div>
-                  <span
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                  ></span>
-                  <span>(100)</span>
-                </div>
-                <div class="product-btn">
-                  <button>Add to Cart</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="product-inner-container">
-            <div class="product-cart">
-              <div class="favorite">
-                <span>
-                  <i class="fa-sharp fa-regular fa-heart"></i>
-                </span>
-              </div>
-              <div class="image">
-                <img src="./asset/images.png" alt="" />
-              </div>
-              <div class="product-text">
-                <div class="product-name">
-                  <h3>Wireless Earbuds, IPX8</h3>
+                <div class="product-price">
                   <h3>$89</h3>
                 </div>
-                <h6 class="product-description">
-                  Organic Cotton, fairtrade certified
-                </h6>
                 <div>
                   <span
                     ><i class="fa-solid fa-star"></i
@@ -362,11 +404,13 @@
               <div class="product-text">
                 <div class="product-name">
                   <h3>Wireless Earbuds, IPX8</h3>
-                  <h3>$89</h3>
                 </div>
                 <h6 class="product-description">
                   Organic Cotton, fairtrade certified
                 </h6>
+                <div class="product-price">
+                  <h3>$89</h3>
+                </div>
                 <div>
                   <span
                     ><i class="fa-solid fa-star"></i
@@ -394,75 +438,13 @@
               <div class="product-text">
                 <div class="product-name">
                   <h3>Wireless Earbuds, IPX8</h3>
-                  <h3>$89</h3>
                 </div>
                 <h6 class="product-description">
                   Organic Cotton, fairtrade certified
                 </h6>
-                <div>
-                  <span
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                  ></span>
-                  <span>(100)</span>
-                </div>
-                <div class="product-btn">
-                  <button>Add to Cart</button>
-                </div>
-              </div>
-            </div>
-            <div class="product-cart">
-              <div class="favorite">
-                <span>
-                  <i class="fa-sharp fa-regular fa-heart"></i>
-                </span>
-              </div>
-              <div class="image">
-                <img src="./asset/images.png" alt="" />
-              </div>
-              <div class="product-text">
-                <div class="product-name">
-                  <h3>Wireless Earbuds, IPX8</h3>
+                <div class="product-price">
                   <h3>$89</h3>
                 </div>
-                <h6 class="product-description">
-                  Organic Cotton, fairtrade certified
-                </h6>
-                <div>
-                  <span
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                  ></span>
-                  <span>(100)</span>
-                </div>
-                <div class="product-btn">
-                  <button>Add to Cart</button>
-                </div>
-              </div>
-            </div>
-            <div class="product-cart">
-              <div class="favorite">
-                <span>
-                  <i class="fa-sharp fa-regular fa-heart"></i>
-                </span>
-              </div>
-              <div class="image">
-                <img src="./asset/images.png" alt="" />
-              </div>
-              <div class="product-text">
-                <div class="product-name">
-                  <h3>Wireless Earbuds, IPX8</h3>
-                  <h3>$89</h3>
-                </div>
-                <h6 class="product-description">
-                  Organic Cotton, fairtrade certified
-                </h6>
                 <div>
                   <span
                     ><i class="fa-solid fa-star"></i
@@ -492,11 +474,13 @@
               <div class="product-text">
                 <div class="product-name">
                   <h3>Wireless Earbuds, IPX8</h3>
-                  <h3>$89</h3>
                 </div>
                 <h6 class="product-description">
                   Organic Cotton, fairtrade certified
                 </h6>
+                <div class="product-price">
+                  <h3>$89</h3>
+                </div>
                 <div>
                   <span
                     ><i class="fa-solid fa-star"></i
@@ -524,11 +508,13 @@
               <div class="product-text">
                 <div class="product-name">
                   <h3>Wireless Earbuds, IPX8</h3>
-                  <h3>$89</h3>
                 </div>
                 <h6 class="product-description">
                   Organic Cotton, fairtrade certified
                 </h6>
+                <div class="product-price">
+                  <h3>$89</h3>
+                </div>
                 <div>
                   <span
                     ><i class="fa-solid fa-star"></i
@@ -556,11 +542,13 @@
               <div class="product-text">
                 <div class="product-name">
                   <h3>Wireless Earbuds, IPX8</h3>
-                  <h3>$89</h3>
                 </div>
                 <h6 class="product-description">
                   Organic Cotton, fairtrade certified
                 </h6>
+                <div class="product-price">
+                  <h3>$89</h3>
+                </div>
                 <div>
                   <span
                     ><i class="fa-solid fa-star"></i
@@ -588,11 +576,13 @@
               <div class="product-text">
                 <div class="product-name">
                   <h3>Wireless Earbuds, IPX8</h3>
-                  <h3>$89</h3>
                 </div>
                 <h6 class="product-description">
                   Organic Cotton, fairtrade certified
                 </h6>
+                <div class="product-price">
+                  <h3>$89</h3>
+                </div>
                 <div>
                   <span
                     ><i class="fa-solid fa-star"></i
@@ -620,11 +610,321 @@
               <div class="product-text">
                 <div class="product-name">
                   <h3>Wireless Earbuds, IPX8</h3>
-                  <h3>$89</h3>
                 </div>
                 <h6 class="product-description">
                   Organic Cotton, fairtrade certified
                 </h6>
+                <div class="product-price">
+                  <h3>$89</h3>
+                </div>
+                <div>
+                  <span
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                  ></span>
+                  <span>(100)</span>
+                </div>
+                <div class="product-btn">
+                  <button>Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="product-cart">
+              <div class="favorite">
+                <span>
+                  <i class="fa-sharp fa-regular fa-heart"></i>
+                </span>
+              </div>
+              <div class="image">
+                <img src="./asset/images.png" alt="" />
+              </div>
+              <div class="product-text">
+                <div class="product-name">
+                  <h3>Wireless Earbuds, IPX8</h3>
+                </div>
+                <h6 class="product-description">
+                  Organic Cotton, fairtrade certified
+                </h6>
+                <div class="product-price">
+                  <h3>$89</h3>
+                </div>
+                <div>
+                  <span
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                  ></span>
+                  <span>(100)</span>
+                </div>
+                <div class="product-btn">
+                  <button>Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="product-cart">
+              <div class="favorite">
+                <span>
+                  <i class="fa-sharp fa-regular fa-heart"></i>
+                </span>
+              </div>
+              <div class="image">
+                <img src="./asset/images.png" alt="" />
+              </div>
+              <div class="product-text">
+                <div class="product-name">
+                  <h3>Wireless Earbuds, IPX8</h3>
+                </div>
+                <h6 class="product-description">
+                  Organic Cotton, fairtrade certified
+                </h6>
+                <div class="product-price">
+                  <h3>$89</h3>
+                </div>
+                <div>
+                  <span
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                  ></span>
+                  <span>(100)</span>
+                </div>
+                <div class="product-btn">
+                  <button>Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-inner-container">
+            <div class="product-cart">
+              <div class="favorite">
+                <span>
+                  <i class="fa-sharp fa-regular fa-heart"></i>
+                </span>
+              </div>
+              <div class="image">
+                <img src="./asset/images.png" alt="" />
+              </div>
+              <div class="product-text">
+                <div class="product-name">
+                  <h3>Wireless Earbuds, IPX8</h3>
+                </div>
+                <h6 class="product-description">
+                  Organic Cotton, fairtrade certified
+                </h6>
+                <div class="product-price">
+                  <h3>$89</h3>
+                </div>
+                <div>
+                  <span
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                  ></span>
+                  <span>(100)</span>
+                </div>
+                <div class="product-btn">
+                  <button>Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="product-cart">
+              <div class="favorite">
+                <span>
+                  <i class="fa-sharp fa-regular fa-heart"></i>
+                </span>
+              </div>
+              <div class="image">
+                <img src="./asset/images.png" alt="" />
+              </div>
+              <div class="product-text">
+                <div class="product-name">
+                  <h3>Wireless Earbuds, IPX8</h3>
+                </div>
+                <h6 class="product-description">
+                  Organic Cotton, fairtrade certified
+                </h6>
+                <div class="product-price">
+                  <h3>$89</h3>
+                </div>
+                <div>
+                  <span
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                  ></span>
+                  <span>(100)</span>
+                </div>
+                <div class="product-btn">
+                  <button>Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="product-cart">
+              <div class="favorite">
+                <span>
+                  <i class="fa-sharp fa-regular fa-heart"></i>
+                </span>
+              </div>
+              <div class="image">
+                <img src="./asset/images.png" alt="" />
+              </div>
+              <div class="product-text">
+                <div class="product-name">
+                  <h3>Wireless Earbuds, IPX8</h3>
+                </div>
+                <h6 class="product-description">
+                  Organic Cotton, fairtrade certified
+                </h6>
+                <div class="product-price">
+                  <h3>$89</h3>
+                </div>
+                <div>
+                  <span
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                  ></span>
+                  <span>(100)</span>
+                </div>
+                <div class="product-btn">
+                  <button>Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="product-cart">
+              <div class="favorite">
+                <span>
+                  <i class="fa-sharp fa-regular fa-heart"></i>
+                </span>
+              </div>
+              <div class="image">
+                <img src="./asset/images.png" alt="" />
+              </div>
+              <div class="product-text">
+                <div class="product-name">
+                  <h3>Wireless Earbuds, IPX8</h3>
+                </div>
+                <h6 class="product-description">
+                  Organic Cotton, fairtrade certified
+                </h6>
+                <div class="product-price">
+                  <h3>$89</h3>
+                </div>
+                <div>
+                  <span
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                  ></span>
+                  <span>(100)</span>
+                </div>
+                <div class="product-btn">
+                  <button>Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="product-cart">
+              <div class="favorite">
+                <span>
+                  <i class="fa-sharp fa-regular fa-heart"></i>
+                </span>
+              </div>
+              <div class="image">
+                <img src="./asset/images.png" alt="" />
+              </div>
+              <div class="product-text">
+                <div class="product-name">
+                  <h3>Wireless Earbuds, IPX8</h3>
+                </div>
+                <h6 class="product-description">
+                  Organic Cotton, fairtrade certified
+                </h6>
+                <div class="product-price">
+                  <h3>$89</h3>
+                </div>
+                <div>
+                  <span
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                  ></span>
+                  <span>(100)</span>
+                </div>
+                <div class="product-btn">
+                  <button>Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="product-cart">
+              <div class="favorite">
+                <span>
+                  <i class="fa-sharp fa-regular fa-heart"></i>
+                </span>
+              </div>
+              <div class="image">
+                <img src="./asset/images.png" alt="" />
+              </div>
+              <div class="product-text">
+                <div class="product-name">
+                  <h3>Wireless Earbuds, IPX8</h3>
+                </div>
+                <h6 class="product-description">
+                  Organic Cotton, fairtrade certified
+                </h6>
+                <div class="product-price">
+                  <h3>$89</h3>
+                </div>
+                <div>
+                  <span
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                  ></span>
+                  <span>(100)</span>
+                </div>
+                <div class="product-btn">
+                  <button>Add to Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="product-cart">
+              <div class="favorite">
+                <span>
+                  <i class="fa-sharp fa-regular fa-heart"></i>
+                </span>
+              </div>
+              <div class="image">
+                <img src="./asset/images.png" alt="" />
+              </div>
+              <div class="product-text">
+                <div class="product-name">
+                  <h3>Wireless Earbuds, IPX8</h3>
+                </div>
+                <h6 class="product-description">
+                  Organic Cotton, fairtrade certified
+                </h6>
+                <div class="product-price">
+                  <h3>$89</h3>
+                </div>
                 <div>
                   <span
                     ><i class="fa-solid fa-star"></i
@@ -647,8 +947,8 @@
 
         <div class="footer-container">
           <div class="footer-inner-container">
-            <div>Copyright © 2023 Domain Name - All Rights Reserved</div>
-            <div>Template by Dribbble Templates</div>
+            <p>Copyright © 2023 Domain Name - All Rights Reserved</p>
+            <p>Template by Dribbble Templates</p>
           </div>
         </div>
       </div>
