@@ -8,52 +8,51 @@
     <link rel="stylesheet" href="webfonts/all.min.css" />
     <link rel="stylesheet" href="webfonts/fontawesome.min.css" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./productDetails.style.css" />
     <link rel="stylesheet" href="./humber.css" />
+    <link rel="stylesheet" href="./productDetails.style.css" />
   </head>
   <body>
-    <section
-      style="display: flex; justify-content: space-around"
-      class="top-nav"
-    >
-      <div class="logo">
-        <span style="color: #fff" ;>
-          <i class="fa-solid fa-cart-shopping"></i>
-        </span>
-        <h2 style="color: #fff" ;>Shopcart</h2>
+    <div class="top-nav-container">
+      <div class="top-nav">
+        <div class="logo">
+          <span style="color: #fff" ;>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </span>
+          <h2 style="color: #fff" ;>Shopcart</h2>
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <ul class="menu">
+          <li><a href="#">Deals</a></li>
+          <li><a href="#">What's New</a></li>
+          <li><a href="#">Delivery</a></li>
+          <li
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 10px;
+            "
+          >
+            <span><i class="fa-solid fa-user"></i></span>
+            <a href="#">Account</a>
+          </li>
+          <li
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 10px;
+            "
+          >
+            <span><i class="fa-solid fa-cart-plus"></i></span>
+            <a href="#">Cart</a>
+          </li>
+        </ul>
       </div>
-      <input id="menu-toggle" type="checkbox" />
-      <label class="menu-button-container" for="menu-toggle">
-        <div class="menu-button"></div>
-      </label>
-      <ul class="menu">
-        <li><a href="#">Deals</a></li>
-        <li><a href="#">What's New</a></li>
-        <li><a href="#">Delivery</a></li>
-        <li
-          style="
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-          "
-        >
-          <span><i class="fa-solid fa-user"></i></span>
-          <a href="#">Account</a>
-        </li>
-        <li
-          style="
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-          "
-        >
-          <span><i class="fa-solid fa-cart-plus"></i></span>
-          <a href="#">Cart</a>
-        </li>
-      </ul>
-    </section>
+    </div>
 
     <div class="main-container">
       <div class="main-inner-container">

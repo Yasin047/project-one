@@ -22,7 +22,7 @@
 .main-section {
     display: flex;
     flex-direction: row;
-    gap: 10%;
+    gap: 6%;
 }
 
 .image-section {
@@ -35,20 +35,21 @@
 }
 
 .image-inner-container {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
     margin-top: 20px;
 }
 
 .image-section-child {
-    width: 150px;
-    height: 150px;
-
+    width: 100%;
+    height: 100%;
 }
 
 .image-section-child img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .product-details-container {
@@ -189,14 +190,15 @@
 }
 
 .buy-btn {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
     gap: 20px;
     margin-bottom: 10px;
 }
 
 .buy-btn button {
-    padding: 12px 65px;
+    width: 50%;
+    height: 35px;
     border-radius: 30px;
     border: 0.5px solid #035539;
     font-weight: 700;
@@ -216,11 +218,6 @@
         width: 100%;
     }
 
-    .image-section-child {
-        width: 75px;
-        height: 75px;
-    }
-
     .main-section {
         display: flex;
         flex-direction: column;
@@ -231,17 +228,16 @@
         margin: 30px 0;
     }
 
-    .buy-btn {
-        display: flex;
-        justify-content: flex-start;
-        gap: 30px;
+
+    .delivery-border a {
+        font-size: 12px;
     }
 
-    .buy-btn button {
-        padding: 12px 35px;
-
+    .delivery-span span {
+        font-size: 12px;
     }
 }
+
 
 @media screen and (min-width:500px) and (max-width:700px) {
     .breadcumb {
@@ -252,9 +248,8 @@
         width: 100%;
     }
 
-    .image-section-child {
-        width: 100px;
-        height: 100px;
+    .image-inner-container {
+        flex-basis: 25%;
     }
 
     .main-section {
@@ -267,15 +262,6 @@
         margin: 30px 0;
     }
 
-    .buy-btn {
-        display: flex;
-        justify-content: flex-start;
-        gap: 30px;
-    }
-
-    .buy-btn button {
-        padding: 12px 60px;
-    }
 }
 
 @media screen and (min-width:700px) and (max-width:992px) {
@@ -288,11 +274,6 @@
         margin: 0 auto;
     }
 
-    .image-section-child {
-        width: 125px;
-        height: 125px;
-    }
-
     .main-section {
         display: flex;
         flex-direction: column;
@@ -303,15 +284,6 @@
         margin: 30px auto;
     }
 
-    .buy-btn {
-        display: flex;
-        justify-content: flex-start;
-        gap: 30px;
-    }
-
-    .buy-btn button {
-        padding: 12px 90px;
-    }
 }
 
 @media screen and (min-width:993px) and (max-width:1200px) {
@@ -330,23 +302,19 @@
         margin: 0 auto;
     }
 
-    .image-section-child {
-        width: 88px;
-        height: 88px;
-    }
-
     .product-details-container {
         width: 60%;
     }
 
-    .buy-btn button {
-        padding: 12px 70px;
-    }
 
+    .footer-container {
+        position: absolute;
+        bottom: 0px;
+    }
 
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1200px)and (max-width:1600px) {
 
     .main-inner-container {
         width: 85%;
@@ -362,29 +330,40 @@
         margin: 0 auto;
     }
 
-    .image-section-child {
-        width: 100px;
-        height: 100px;
-    }
-
     .product-details-container {
         width: 60%;
     }
 
-    .buy-btn {
-        display: flex;
-        justify-content: flex-start;
-        gap: 30px;
-    }
-
-    .buy-btn button {
-        padding: 12px 70px;
-    }
-}
-
-@media screen and (min-width:993px) {
     .footer-container {
         position: absolute;
         bottom: 0px;
+    }
+}
+
+@media screen and (min-width:1600px) {
+    .main-inner-container {
+        width: 1500px;
+    }
+
+    .top-nav {
+        width: 1500px;
+    }
+
+    .image-section {
+        width: 700px;
+        margin: 0 auto;
+    }
+
+    .product-details-container {
+        width: 800px;
+    }
+
+    .footer-container {
+        position: absolute;
+        bottom: 0px;
+    }
+
+    .footer-inner-container {
+        width: 1500px;
     }
 }

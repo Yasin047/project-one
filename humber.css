@@ -1,9 +1,15 @@
+.top-nav-container {
+    width: 100%;
+    background-color: #013D29;
+}
+
 .top-nav {
+    width: 85%;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #013D29;
     color: #FFF;
     height: 50px;
     padding: 1em;
